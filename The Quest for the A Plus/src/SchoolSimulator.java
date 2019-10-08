@@ -361,7 +361,7 @@ public class SchoolSimulator {
 	public void outsideRest() {
 		location = "outsideRest";
 		mainText.setText("You to yourself: How the hell "
-				+ "does everyone know \nthat I have a B-? Well, I have a spoon now, I need topee, "
+				+ "does everyone know \nthat I have a B-? Well, I have a spoon now, I need to pee, "
 				+ "and the teacher will probably roast me when I \ncome back. What am I supposed to do now?");
 		b1.setText("Go back to class");
 		b2.setText("Go to vending machine");
@@ -548,7 +548,7 @@ public class SchoolSimulator {
 		location = "afterBottleKid";
 		item2 = "candy";
 		statusRefresh(cash, item1, item2);
-		mainText.setText("You: I wonder why there's a kid here and it's still 4thperiod.\n\n*Lunch bell rings*"
+		mainText.setText("You: I wonder why there's a kid here and it's still 4th period.\n\n*Lunch bell rings*"
 				+ "\n\nYou: Aw man, there's no point going back to class, \nthe teacher is going to eat me alive. And my grade.");
 		b1.setText(">");
 		b2.setText("");
