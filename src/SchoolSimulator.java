@@ -259,9 +259,9 @@ public class SchoolSimulator {
 		location = "classroom";
 		mainText.setFont(new Font("Verdana", Font.PLAIN, 22));
 		statusSetup();
-		mainText.setText("Welcome! You are currently in your 4th period class, and you are currently very restless as you have a B- \nin the class."
+		mainText.setText("Welcome! You are currently in your 4th period class, and you are currently very restless as you have a B-\nin the class."
 				+ " The school year is almost over, and"
-				+ " you and your parents both know that you won't get away \nwith having a B-. What will you do?");
+				+ " you and your parents both know that you won't get away\nwith having a B-. What will you do?");
 		b1.removeActionListener(cl);
 		b1.setText("Ask to use restroom.");
 		b2.setText("Talk to your buddy next to you.");
@@ -272,7 +272,7 @@ public class SchoolSimulator {
 	//1st pos 1st option
 	public void askRest() {
 		location = "usingRest";
-		mainText.setText("Teacher: Yes, you? Ugh, if you really have to. \nHonestly, you shouldn't be missing class time "
+		mainText.setText("Teacher: Yes, you? Ugh, if you really have to.\nHonestly, you shouldn't be missing class time "
 				+ "with\nyour current grade. Just leave.");
 		b1.setText(">");
 		b2.setText("");
@@ -291,8 +291,8 @@ public class SchoolSimulator {
 	//1st pos 3rd option
 	public void askDay() {
 		location = "askDay";
-		mainText.setText("Teacher: Yes? Why the hell are you asking that \nquestion right now? Can't you see that I'm teaching aclass right now?"
-				+ " God, students like you piss me off. \nBy the way, my day is going terribly, thank you for \nasking.");
+		mainText.setText("Teacher: Yes? Why the hell are you asking that\nquestion right now? Can't you see that I'm teaching aclass right now?"
+				+ " God, students like you piss me off.\nBy the way, my day is going terribly, thank you for\nasking.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -302,7 +302,7 @@ public class SchoolSimulator {
 	//1st pos 4th option
 	public void sleep(){
 		location = "sleep";
-		mainText.setText("You: *falls asleep* \n\nTeacher: Hey! What are you doing? Pay attention! \nThis kid thinks they're so smart, huh...");
+		mainText.setText("You: *falls asleep*\n\nTeacher: Hey! What are you doing? Pay attention!\nThis kid thinks they're so smart, huh...");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -326,7 +326,7 @@ public class SchoolSimulator {
 		location = "hasSpoon";
 		item1 = "spoon";
 		statusRefresh(cash, item1, item2);
-		mainText.setText("You pick up the spoon. \n\nYou: Hey, what was that for? Did someone use this \nspoon?"
+		mainText.setText("You pick up the spoon.\n\nYou: Hey, what was that for? Did someone use this\nspoon?"
 				+ "\n\nKid: Leave before I beat you to a pulp. Can't you see I'm busy?");
 		b1.setText("Leave");
 		b2.setText("Stay");
@@ -338,7 +338,7 @@ public class SchoolSimulator {
 	
 	public void stayKid() {
 		location = "stayKid";
-		mainText.setText("Kid: Nah, Imma kick you out. You're not worth \nfighting. A kid with a B- like you doesn't deserve a \nfight.");
+		mainText.setText("Kid: Nah, Imma kick you out. You're not worth\nfighting. A kid with a B- like you doesn't deserve a\nfight.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -348,7 +348,7 @@ public class SchoolSimulator {
 
 	public void leaveKid() {
 		location = "leaveKid";
-		mainText.setText("Kid: That's what I thought. A scrub like you \nwith a B- can't put up a fight");
+		mainText.setText("Kid: That's what I thought. A scrub like you\nwith a B- can't put up a fight");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -361,8 +361,8 @@ public class SchoolSimulator {
 	public void outsideRest() {
 		location = "outsideRest";
 		mainText.setText("You to yourself: How the hell "
-				+ "does everyone know \nthat I have a B-? Well, I have a spoon now, I need topee, "
-				+ "and the teacher will probably roast me when I \ncome back. What am I supposed to do now?");
+				+ "does everyone know\nthat I have a B-? Well, I have a spoon now, I need topee, "
+				+ "and the teacher will probably roast me when I\ncome back. What am I supposed to do now?");
 		b1.setText("Go back to class");
 		b2.setText("Go to vending machine");
 		b3.setText("Climb and sit on the roof");
@@ -371,7 +371,7 @@ public class SchoolSimulator {
 	
 	public void backToClass(){
 		location = "backToClass";
-		mainText.setText("You proceed to go back to class and get verbally \ndestroyed by your teacher.");
+		mainText.setText("You proceed to go back to class and get verbally\ndestroyed by your teacher.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -401,7 +401,7 @@ public class SchoolSimulator {
 		else {
 			item2 = "chips bag";
 			statusRefresh(cash, item1, item2);
-			mainText.setText("You proceed to buy and eat chips, and decide to \nkeep the bag.\n\nYou now have $" + cash + "0 remaining");
+			mainText.setText("You proceed to buy and eat chips, and decide to\nkeep the bag.\n\nYou now have $" + cash + "0 remaining");
 			b1.setText(">");
 			b2.setText("");
 			b3.setText("");
@@ -442,8 +442,8 @@ public class SchoolSimulator {
 	
 	public void sitRoof() {
 		location = "roof";
-		mainText.setText("You: For some reason, I just feel like sitting on the \nroof. I wonder if I'll get caught."
-				+ "\n\n *You proceed to sit on the roof of a classroom \nbuilding without getting caught.* ");
+		mainText.setText("You: For some reason, I just feel like sitting on the\nroof. I wonder if I'll get caught."
+				+ "\n\n *You proceed to sit on the roof of a classroom\nbuilding without getting caught.* ");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -453,7 +453,7 @@ public class SchoolSimulator {
 	public void seeKey() {
 		location = "seeKey";
 		mainText.setText("You are looking around while on the roof and happen to see a key lying on the ground in the distance."
-				+ " It \nlooks like it's near a bunch of garbage cans.");
+				+ " It\nlooks like it's near a bunch of garbage cans.");
 		b1.setText("Go back down");
 		b2.setText("");
 		b3.setText("");
@@ -464,7 +464,7 @@ public class SchoolSimulator {
 	public void goLibrary(){
 		location = "goLibrary";
 		mainText.setText("You proceed to go to the library using the main route,but you see some teachers walking around."
-				+ " It does \nnot look like you should go that way. How do you \nwant to go to the library now? ");
+				+ " It does\nnot look like you should go that way. How do you\nwant to go to the library now? ");
 		b1.setText("Keep going straight");
 		b2.setText("Go through the crossroads");
 		b3.setText("Go around the field");
@@ -473,7 +473,7 @@ public class SchoolSimulator {
 	
 	public void goStraight(){
 		location = "goStraight";
-		mainText.setText("You proceed forward. \n\nTeacher: Hey you! What are you doing? You're in \ndeep trouble, little kid!!!");
+		mainText.setText("You proceed forward.\n\nTeacher: Hey you! What are you doing? You're in\ndeep trouble, little kid!!!");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -482,7 +482,7 @@ public class SchoolSimulator {
 	
 	public void goCrossroads(){
 		location = "crossroads";
-		mainText.setText("You are now at the crossroads. \n\nWhere would you like to go?");
+		mainText.setText("You are now at the crossroads.\n\nWhere would you like to go?");
 		b1.setText("Back to previous location");
 		b2.setText("Back to class");
 		b3.setText("Forward to library");
@@ -491,7 +491,7 @@ public class SchoolSimulator {
 	
 	public void goField(){
 		location = "field";
-		mainText.setText("You are now at a relatively large field. \n\nWhere would you like to go?");
+		mainText.setText("You are now at a relatively large field.\n\nWhere would you like to go?");
 		b1.setText("Back to previous location");
 		b2.setText("Back to class");
 		b3.setText("Forward to library");
@@ -500,7 +500,7 @@ public class SchoolSimulator {
 	
 	public void goInLibrary(){
 		location = "inLibrary";
-		mainText.setText("You are now in the library, and there are no \nteachers around. \n\nWhat would you like to do?");
+		mainText.setText("You are now in the library, and there are no\nteachers around.\n\nWhat would you like to do?");
 		b1.setText("Go back to field");
 		b2.setText("Go back to crossroads");
 		b3.setText("Go to computers");
@@ -509,8 +509,8 @@ public class SchoolSimulator {
 	
 	public void goComputers(){
 		location = "goComputers";
-		mainText.setText("As you approach the computers, a boy sitting \ngets up and asks you something."
-				+ "\n\nBoy: Hey, you! Do you have a spare water bottle\nthat I can use? I need it for a project in my next \nclass.");
+		mainText.setText("As you approach the computers, a boy sitting\ngets up and asks you something."
+				+ "\n\nBoy: Hey, you! Do you have a spare water bottle\nthat I can use? I need it for a project in my next\nclass.");
 		b1.setText("Sorry, I don't have one");
 		b2.setText("");
 		b3.setText("");
@@ -549,7 +549,7 @@ public class SchoolSimulator {
 		item2 = "candy";
 		statusRefresh(cash, item1, item2);
 		mainText.setText("You: I wonder why there's a kid here and it's still 4thperiod.\n\n*Lunch bell rings*"
-				+ "\n\nYou: Aw man, there's no point going back to class, \nthe teacher is going to eat me alive. And my grade.");
+				+ "\n\nYou: Aw man, there's no point going back to class,\nthe teacher is going to eat me alive. And my grade.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -568,7 +568,7 @@ public class SchoolSimulator {
 	public void towardsOffice(){
 		location = "towardsOffice";
 		if(fredRunning){
-			mainText.setText("Quick! Fred is still running around, you \nshould go into the office!");
+			mainText.setText("Quick! Fred is still running around, you\nshould go into the office!");
 			b1.setText(">");
 			b2.setText("");
 			b3.setText("");
@@ -577,7 +577,7 @@ public class SchoolSimulator {
 		else{
 			mainText.setText("You walk towards the administration office, but stop because there are too many teachers outside."
 				+ "\nYou think to yourself: Maybe I can change my grade using the admin computer."	
-				+ " But how can I do \nthat?");
+				+ " But how can I do\nthat?");
 			b1.setText(">");
 			b2.setText("");
 			b3.setText("");
@@ -589,8 +589,8 @@ public class SchoolSimulator {
 		location = "towardsGarbage";
 		if(item1.equals("none") || item2.equals("none")){
 			hasSpace = true;
-			mainText.setText("You walk towards the garbage area. Something \nis glistening on the ground.\nIt looks like a key."
-					+ "\nMaybe it could be used to open some door. \n\nYou pick up the key");
+			mainText.setText("You walk towards the garbage area. Something\nis glistening on the ground.\nIt looks like a key."
+					+ "\nMaybe it could be used to open some door.\n\nYou pick up the key");
 			b1.setText(">");
 			b2.setText("");
 			b3.setText("");
@@ -613,7 +613,7 @@ public class SchoolSimulator {
 		else
 			item2 = "key";
 		statusRefresh(cash, item1, item2);
-		mainText.setText("You picked up the key and walk back to the library \nentrance.");
+		mainText.setText("You picked up the key and walk back to the library\nentrance.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -623,7 +623,7 @@ public class SchoolSimulator {
 	//stopped here
 	public void towardsCafeteria(){
 		location = "towardsCafeteria";
-		mainText.setText("As you walk to the cafeteria, you see that there's a \nlot of interesting stuff going on.");
+		mainText.setText("As you walk to the cafeteria, you see that there's a\nlot of interesting stuff going on.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -632,7 +632,7 @@ public class SchoolSimulator {
 	
 	public void cafeteria(){
 		location = "cafeteria";
-		mainText.setText("You are right outside the cafeteria, and several, \ninteresting activities are going on among your fellow \npeers. What would you like to do?");
+		mainText.setText("You are right outside the cafeteria, and several,\ninteresting activities are going on among your fellow\npeers. What would you like to do?");
 		b1.setText("Walk inside cafeteria");
 		b2.setText("Go to gambler");
 		b3.setText("Go to 'Fat Fred'");
@@ -649,8 +649,8 @@ public class SchoolSimulator {
 			b4.setText("Leave");
 		}
 		else{
-			mainText.setText("You walk into the cafeteria, but you are not \ninterested in eat anything due to your anxiety."
-				+ "\n\nHowever, you see a person alone crying. What will \nyou do?");
+			mainText.setText("You walk into the cafeteria, but you are not\ninterested in eat anything due to your anxiety."
+				+ "\n\nHowever, you see a person alone crying. What will\nyou do?");
 			b1.setText("Walk to him");
 			b2.setText("Leave");
 			b3.setText("");
@@ -661,8 +661,8 @@ public class SchoolSimulator {
 	public void helpKid(){
 		location = "helpKid";
 		mainText.setText("You walk towards the kid and ask what's the problem"
-				+ "\nKid: I dropped my only spoon, and now I can't eat \nmy soup!!"
-				+ "\n\nYou think to yourself: Bruh I thought he had a B in a class or something that devastating, not something \nas dumb as this.");
+				+ "\nKid: I dropped my only spoon, and now I can't eat\nmy soup!!"
+				+ "\n\nYou think to yourself: Bruh I thought he had a B in a class or something that devastating, not something\nas dumb as this.");
 		b1.setText("Give spoon");
 		b2.setText("");
 		b3.setText("");
@@ -674,7 +674,7 @@ public class SchoolSimulator {
 		item1 = "none";
 		statusRefresh(cash, item1, item2);
 		encounteredPizzaKid = true;
-		mainText.setText("Kid: Oh my, thanks my dude!! I friggin, like, LOVE \nyou bruh. Here, have this.");
+		mainText.setText("Kid: Oh my, thanks my dude!! I friggin, like, LOVE\nyou bruh. Here, have this.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -714,7 +714,7 @@ public class SchoolSimulator {
 	
 	public void tellB(){
 		location = "tellB";
-		mainText.setText("Sketchy Shravan: Oh thats pretty sketch, but not \nsketchy enough. Try again.");
+		mainText.setText("Sketchy Shravan: Oh thats pretty sketch, but not\nsketchy enough. Try again.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -727,7 +727,7 @@ public class SchoolSimulator {
 		mainText.setText("Sketchy Shravan: Holy hell dude now that's sketchy. Here's my story: "
 				+ "I met this kid who said he had the\nadmin password to all the computers! He said he'll"
 				+ "\ntell me it if I ate an entire doorknob. Which I gladly\ndid, of course. Oh, here's the password "
-				+ "by the way. \nIt's 'i_never_get_Bs'");
+				+ "by the way.\nIt's 'i_never_get_Bs'");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -736,8 +736,8 @@ public class SchoolSimulator {
 	
 	public void afterPass(){
 		location = "afterPass";
-		mainText.setText("You to yourself: God dangit why does everything \nhave to be about grades. Well, at least I know "
-				+ "the \nadmin password, for whatever it's worth"
+		mainText.setText("You to yourself: God dangit why does everything\nhave to be about grades. Well, at least I know "
+				+ "the\nadmin password, for whatever it's worth"
 				+ "\n\nYou: Thanks, Sketchy Shravan!"
 				+ "\n\nSketchy Shravan: I gotchu fam. Stay sketch.");
 		b1.setText(">");
@@ -747,7 +747,7 @@ public class SchoolSimulator {
 	}
 	public void notCooler(){
 		location = "notCooler";
-		mainText.setText("Sketchy Shravan: Bruh that's not sketchy. We all \nknow that's hella true. Try again");
+		mainText.setText("Sketchy Shravan: Bruh that's not sketchy. We all\nknow that's hella true. Try again");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -756,7 +756,7 @@ public class SchoolSimulator {
 	
 	public void gaveBottle(){
 		location = "gaveBottle";
-		mainText.setText("Sketchy Shravan: Ehh... I've heard worse. \nNot sketchy enough.");
+		mainText.setText("Sketchy Shravan: Ehh... I've heard worse.\nNot sketchy enough.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -790,7 +790,7 @@ public class SchoolSimulator {
 			b4.setText("");
 		}
 		else{
-			mainText.setText("Nice Nancy: Sorry dear, but it doesn't look like you \nABSOLUTELY need money!");
+			mainText.setText("Nice Nancy: Sorry dear, but it doesn't look like you\nABSOLUTELY need money!");
 			b1.setText(">");
 			b2.setText("");
 			b3.setText("");
@@ -801,7 +801,7 @@ public class SchoolSimulator {
 	public void goGambler(){
 		location = "goGambler";
 		mainText.setText("You go up to the notorious gambler, 'Gambler Greg'."
-				+ "\n\nGambler Greg: What do you want kid? You gonna \nplay or what?"
+				+ "\n\nGambler Greg: What do you want kid? You gonna\nplay or what?"
 				+ "\n\n$2 to play, get $5 or $10 if you win depending\non the game.");
 		b1.setText("Rock, Paper, Scissors - $5");
 		b2.setText("Number between 1 and 20 - $10");
@@ -949,7 +949,7 @@ public class SchoolSimulator {
 	public void fatFred(){
 		location = "fatFred";
 		if(encounteredFred){
-			mainText.setText("Fat Fred: You already know what you gotta do. Give me food so that I can help you! Oh hey, homie. You \ngot the money?");
+			mainText.setText("Fat Fred: You already know what you gotta do. Give me food so that I can help you! Oh hey, homie. You\ngot the money?");
 			b1.setText("Yes");
 			b2.setText("No");
 			b3.setText("");
@@ -985,7 +985,7 @@ public class SchoolSimulator {
 		location = "giveFood";
 		item2 = "none";
 		statusRefresh(cash,item1,item2);
-		mainText.setText("You give him your candy. \n\nFat Fred: Gimme gimme!! Ok kid, what do you need help with?");
+		mainText.setText("You give him your candy.\n\nFat Fred: Gimme gimme!! Ok kid, what do you need help with?");
 		b1.setText("How do I get an A?");
 		b2.setText("");
 		b3.setText("");
@@ -994,9 +994,9 @@ public class SchoolSimulator {
 	
 	public void fredAdvice(){
 		location = "fredAdvice";
-		mainText.setText("Fat Fred: Homie, there's not much time left in the \nschool year. I think your best bet is"
-				+ " to cheat your \nway, like maybe changing the grades in the admin \nsystem. You gotta sneak your way into the office. \n"
-				+ "I can help you out, only if you pay me though. $20 \nand I'll make a distraction for the admins so you can \nenter peacefully.");
+		mainText.setText("Fat Fred: Homie, there's not much time left in the\nschool year. I think your best bet is"
+				+ " to cheat your\nway, like maybe changing the grades in the admin\nsystem. You gotta sneak your way into the office.\n"
+				+ "I can help you out, only if you pay me though. $20\nand I'll make a distraction for the admins so you can\nenter peacefully.");
 		b1.setText("Deal");
 		b2.setText("");
 		b3.setText("");
@@ -1006,8 +1006,8 @@ public class SchoolSimulator {
 	public void dealFred(){
 		location = "dealFred";
 		encounteredFred = true;
-		mainText.setText("Fat Fred: You got yourself a deal. Come back when \nyou got the money, bro. "
-				+ "By the way, I saw a key \nlying around near the garbage collection area. Maybe it could be of use to you.");
+		mainText.setText("Fat Fred: You got yourself a deal. Come back when\nyou got the money, bro. "
+				+ "By the way, I saw a key\nlying around near the garbage collection area. Maybe it could be of use to you.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -1018,7 +1018,7 @@ public class SchoolSimulator {
 		location = "give20";
 		if(cash < 20){
 			has20 = false;
-			mainText.setText("Fat Fred: Homie I know you don't got the money. \nStop lying man.");
+			mainText.setText("Fat Fred: Homie I know you don't got the money.\nStop lying man.");
 			b1.setText(">");
 			b2.setText("");
 			b3.setText("");
@@ -1029,8 +1029,8 @@ public class SchoolSimulator {
 			has20 = true;
 			fredRunning = true;
 			statusRefresh(cash,item1,item2);
-			mainText.setText("Fat Fred: I knew you could pull through homie. You \nneed a distraction, right? I'll help you out."
-					+ "\n\nFat Fred takes off his shirt, showing the world his \nglorious upper body and proceeds to run towards the \noffice."
+			mainText.setText("Fat Fred: I knew you could pull through homie. You\nneed a distraction, right? I'll help you out."
+					+ "\n\nFat Fred takes off his shirt, showing the world his\nglorious upper body and proceeds to run towards the\noffice."
 					+ " You see all the admins leave the office and runtowards Fat Fred to stop him.");
 			b1.setText(">");
 			b2.setText("");
@@ -1048,7 +1048,7 @@ public class SchoolSimulator {
 	}
 	public void breachOffice(){
 		location = "office";
-		mainText.setText("You proceed to run into the office. However, the \nmain admin's door seems to be locked!");
+		mainText.setText("You proceed to run into the office. However, the\nmain admin's door seems to be locked!");
 		if(item1.equals("key") || item2.equals("key")){
 			hasKey = true;
 			b1.setText("Use key");
@@ -1068,8 +1068,8 @@ public class SchoolSimulator {
 	public void useKey(){
 		location = "adminOffice";
 		if(knowsPassword){
-			mainText.setText("You are now in the admin office! You run up to the \ncomputer, and type in the password"
-					+ " that Sketchy \nShravan told you. Man, is he a savior.");
+			mainText.setText("You are now in the admin office! You run up to the\ncomputer, and type in the password"
+					+ " that Sketchy\nShravan told you. Man, is he a savior.");
 			b1.setText(">");
 			b2.setText("");
 			b3.setText("");
@@ -1087,9 +1087,9 @@ public class SchoolSimulator {
 	
 	public void changeGrade(){
 		location = "changeGrade";
-		mainText.setText("You now have full access to everyone's grades. You \ngo to your gradebook and look at the B-."
-				+ "You think to\nyourself: Wow, am I going to get in trouble if anyone finds this out. \n\nLuckily, no one does, and your"
-				+ "grade in the class is \nnow an A+. Both you and your parents are incredibly \nhappy. Mission accomplished.");
+		mainText.setText("You now have full access to everyone's grades. You\ngo to your gradebook and look at the B-."
+				+ "You think to\nyourself: Wow, am I going to get in trouble if anyone finds this out.\n\nLuckily, no one does, and your"
+				+ "grade in the class is\nnow an A+. Both you and your parents are incredibly\nhappy. Mission accomplished.");
 		b1.setText(">");
 		b2.setText("");
 		b3.setText("");
@@ -1099,7 +1099,7 @@ public class SchoolSimulator {
 	public void gameEnd(){
 		location = "gameEnd";
 		mainText.setFont(new Font("Verdana", Font.PLAIN, 50));
-		mainText.setText("You win! Thanks for \nplaying!");
+		mainText.setText("You win! Thanks for\nplaying!");
 		frame.remove(buttonPanel);
 		frame.remove(hpPanel);
 		frame.remove(invPanel);
